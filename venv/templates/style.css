@@ -7,13 +7,12 @@
     color:#000000;
 }
 
-
 img{
     max-height: 25%;
     max-width: 25%;
     height: auto;
     width: auto;
-
+    padding-left: 5ex;
 }
 .nav-tabs{
     border-color:#d56d1f;
