@@ -1,0 +1,159 @@
+[33mcommit 72933ba94a2aea655585fa04bbb0d02e755effe7[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/dev[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 15:35:05 2017 -0500
+
+    Implemented sorted code and final touchups
+
+[33mcommit 0b6ad6aa647584d25e6d61a0d151964b7bc26048[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 13:46:55 2017 -0500
+
+    Added caterpillar info and chagned about page
+
+[33mcommit 7357b1dc02a226a49c725f952bfae53928ab0c46[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 12:45:50 2017 -0500
+
+    Inputted most of the data
+
+[33mcommit d973ddef3edccd716759c5a569bae0a57954cd90[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 01:23:57 2017 -0500
+
+    Fixed the transitioning between html pages
+
+[33mcommit 4869b8a0bf8100882314cd60480f76a467b67c6f[m
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Wed Oct 25 22:48:11 2017 -0500
+
+    Added Mitchell bio and pic
+
+[33mcommit fdea589e586022a2c69e7a649ab449fae623c43a[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 22:31:58 2017 -0500
+
+    Fixed 502 Gateway Error and connected NameCheap
+
+[33mcommit a6443c7f5d7809fc816dd8f5b94895e8d6f3f29a[m
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Wed Oct 25 20:18:23 2017 -0500
+
+    Made it flask approved. No more venv file
+
+[33mcommit 3dbbf654ff27a8c9de49673deba9df2304e02a82[m
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Wed Oct 25 19:14:13 2017 -0500
+
+    derp
+
+[33mcommit a7ba4b5813f403285e9d86e2b2a43418da5d718b[m
+Author: Unknown <nicole.muzquiz@gmail.com>
+Date:   Wed Oct 25 17:47:00 2017 -0500
+
+    small <br> segment making it look weird. Fixed
+
+[33mcommit 87b173d97a9b1c882900cc8b21a320e3a10b0949[m
+Author: Unknown <nicole.muzquiz@gmail.com>
+Date:   Wed Oct 25 17:45:10 2017 -0500
+
+    Finished my about and added Hungry Caterpillar pic
+
+[33mcommit f5660773773dc8f1548a2e81d47f6966fa9b8a33[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 12:36:25 2017 -0500
+
+    Adding harry potter image to the splash page
+
+[33mcommit 12e3a7864ff5dcd35d71a3816dc8a5a43343da8f[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 11:04:11 2017 -0500
+
+    Added harry potter details throughout all the models
+
+[33mcommit ab3cc212da21653bbcfc6de511408e2a61fcd80c[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 10:34:01 2017 -0500
+
+    Made bio page for Salman Charolia
+
+[33mcommit 7399aebae2b577261c0066af340826982769cbaa[m
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Tue Oct 24 21:38:14 2017 -0500
+
+    made pages standard, added aleem bio
+
+[33mcommit ea45cdf28892fc18075b8c41e013cc339fbf2a1b[m
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Tue Oct 24 18:06:38 2017 -0500
+
+    added navigation bar on main page
+
+[33mcommit e6ebe943c2df6eb7a45d72fc90519ed13ce07af7[m
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Tue Oct 24 11:19:06 2017 -0500
+
+    Fixed index.html links to ppublishers and authors
+
+[33mcommit fe2a9ab527ec44a3e691f1894dfe01d36fe0f962[m
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Mon Oct 23 22:54:27 2017 -0500
+
+    Second upload
+
+[33mcommit 54414c9fb264c1d28778218ec116126218d28585[m
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Mon Oct 23 22:33:37 2017 -0500
+
+    Organized and created files
+
+[33mcommit a5acde93d275e711d54e0518575b130fe0a9ebe8[m
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sun Oct 22 00:06:10 2017 -0500
+
+    Got browser tab icon working
+
+[33mcommit fe5801e0f8fee31a760a3eecb6e56004655a9ef1[m
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 23:57:17 2017 -0500
+
+    minor padding changes
+
+[33mcommit f489164f8d90ec96f94d64df6e0b7dcd9881a896[m
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 23:40:51 2017 -0500
+
+    Decorated my tab in about
+    
+    feel free to copy layout to decorate your own or I can help ya if you want :)
+
+[33mcommit 0d611e3174b1e39a9fe21f5de52848c25244ee62[m
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 22:31:46 2017 -0500
+
+    Made Styled Tabs for About page
+    
+    Used Bootstrap and a css file to override the default css of bootstrap
+
+[33mcommit bd5e2663dee6cf12051b4f1dae610facf19cfe07[m
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Thu Oct 19 20:28:35 2017 -0500
+
+    added templetes and html files
+
+[33mcommit 70f11a116301545e1de9e548c0d491c855277340[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 18 18:36:11 2017 -0500
+
+    finished virtual environment setup
+
+[33mcommit d630cc176f67014af6875540f30c46f50907c943[m
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 18 18:12:55 2017 -0500
+
+    Starting Virtual Environment
+
+[33mcommit 48f72317219a441eb6e14f7fad762444bd459ab3[m
+Author: mitchellyick <31523888+mitchellyick@users.noreply.github.com>
+Date:   Wed Oct 18 17:33:14 2017 -0500
+
+    Initial commit
