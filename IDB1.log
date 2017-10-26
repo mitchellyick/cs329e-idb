@@ -1,3 +1,21 @@
+commit 3c64c13b06495e059b0d3a66fad5bb67ccdf649b
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:13:14 2017 -0500
+
+    Deleted last useless hidden file
+
+commit 56eba5f90644d0a1b0763cacd56b92f045b94d50
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:08:52 2017 -0500
+
+    Fix random added files
+
+commit 4014d0cf1a020a73ad23ce12b4dab68d05f56961
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:07:08 2017 -0500
+
+    Added log file
+
 commit 72933ba94a2aea655585fa04bbb0d02e755effe7
 Author: Salman Charolia <salmancharolia@gmail.com>
 Date:   Thu Oct 26 15:35:05 2017 -0500
