@@ -1,0 +1,74 @@
+<!-- the home/splash page -->
+<html>
+<head>
+	<title> Books Galore </title>
+	<meta name="viewpt" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/book.ico">
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!--
+	<a href = 'about.html'>About</a>
+	<a href = 'model.html'>Models</a>
+	<a href = 'author.html'>Authors</a>
+	<a href = 'title.html'>Titles</a>
+	<a href = 'publisher.html'>Publishers</a>
+-->
+<style>
+    .center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 5px;
+}
+
+    </style>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Books Galore</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+       <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href={{url_for('about')}}>About <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+         <li><a href='{{}}'>Aleem Ali</a></li>
+          <li><a href='about.html#mitchel'>Mitchel Yick</a></li>
+          <li><a href='about.html#nicole'>Nicole Muzquiz</a></li>
+          <li><a href='about.html#salman'>Salman Charolia</a></li>
+        </ul>
+      </li>-->
+      <li><a href="model.html">Models</a></li>
+      <li><a href="author.html">Authors</a></li>
+	    <li><a href="title.html">Titles</a></li>
+	    <li><a href="publisher.html">Publishers</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+    <div class="center">
+    <h1>Some of the books in our collection!</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-6" id="HP">
+            <h3>Harry Potter and the Sorcerer's Stone</h3>
+            <img src="images/movieposter.jpg" alt="404 no pictures of Harry Potter here" align="left" class="">
+        </div>
+        <div class="col-sm-6 col-md-6" id="HC">
+            <h3>The Very Hungry Caterpillar</h3>
+            <img src="images/HungryCater.jpg" alt="404 caterpillar out toeat more" align="left">
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
