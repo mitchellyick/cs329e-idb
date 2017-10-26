@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<title> Books Galore </title>
+	<meta name="viewpt" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/book.ico">
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!--
+	<a href = 'about.html'>About</a>
+	<a href = 'model.html'>Models</a>
+	<a href = 'author.html'>Authors</a>
+	<a href = 'title.html'>Titles</a>
+	<a href = 'publisher.html'>Publishers</a>
+-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Books Galore</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="{{url_for('index')}}">Home</a></li>
+      <li ><a href="{{url_for('about')}}">About</a></li>
+      <li ><a href="{{url_for('author')}}">Authors</a></li>
+	    <li class="active"><a href="{{url_for('title')}}">Titles</a></li>
+	    <li><a href="{{url_for('publisher')}}">Publishers</a></li>
+    </ul>
+  </div>
+</nav>
+<h1> Titles </h1><hr/>
+
+<table BORDER = "2">
+		<tr>
+			<th>Google ID</th>
+			<th>Title</th>
+			<th>ISBN</th>
+			<th>Publication Date</th>
+			<th>Image</th>
+			<th>Description</th>
+			<th>Publishers</th>
+			<th>Author</th>
+		</tr>
+		<tr>
+			<td>wrOQLV6xB-wC</td>
+			<td>Harry Potter and the Sorcerer's Stone</td>
+			<td>9781781100486</td>
+			<td>2015-12-08</td>
+			<td>https://books.google.com/books/content/images/frontcover/wrOQLV6xB-wC?fife=w500</td>
+			<td>Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'.\" Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!</td>
+			<td><a href='publisher.html'>Pottermore</a></td>
+			<td><a href='author.html'>J. K. Rowling</a></td>
+		</tr>
+</body>
+
+</html>
