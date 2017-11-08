@@ -1,6 +1,7 @@
 '''
 This file defines the models for a book
 '''
+'''
 # for manipulating diff parts of Python's run-time environment
 import sys
 import os
@@ -42,3 +43,38 @@ Base.metadata.create_all(engine)
 # This indicates that you need to install 'psycopg2' module
 # To install the 'psycopg2' module:
 # pip install psycopg2
+'''
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:asd123@localhost/bookdb'
+db = SQLAlchemy(app)
+
+class Titles(db.Model):
+    __tablename__ = 'Titles'
+    name = db.Column(db.String(80), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    details = db.Column(db.String(140), nullable=False)
+    wiki = db.Column(db.String(140), nullable=False)
+    #series = db.Column()"""
+
+class Authors(db.Model):
+    __tablename__ = 'Authors'
+    name = db.Column(db.String(80), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    details = db.Column(db.String(120), nullable=False)
+    #comics = db.Column(db.String(80), nullable=False)
+    #series = db.Column()
+
+class Publishers(db.Model):
+    __tablename__ = 'Publishers'
+    name = db.Column(db.String(80), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    startyear = db.Column(db.Integer, primary_key=True)
+    endyear = db.Column(db.Integer, primary_key=True)
+    #creators = db.Column()
+    #characters = db.Column()
+
+db.drop_all()
+db.create_all()
