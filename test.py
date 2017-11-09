@@ -27,7 +27,7 @@ class DBTestCases(unittest.TestCase):
 
 
         r = session.query(Titles).filter_by(google_id = '20').one()
-        self.assertEqual(str(r.id), '20')
+        self.assertEqual(str(r.google_id), '20')
 
         session.query(Titles).filter_by(google_id = '20').delete()
         session.commit()
