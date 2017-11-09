@@ -98,10 +98,25 @@ def create_books():
     for oneBook in book:
         title = oneBook['title']
         idb = oneBook['google_id']
-        isbn1 = oneBook['isbn']
-        pubdate = oneBook['publication_date']
-        imurl = oneBook['image_url']
-        description1 = oneBook['description']
+        try:
+            isbn1 = oneBook['isbn']
+        except Exception, e:
+            isbn1 = "N/A"
+        
+        try:
+            imurl = oneBook['image_url']
+        except Exception, e:
+            imurl = "N/A"
+
+        try:
+            pubdate = oneBook['publication_date']
+        except Exception, e:
+            pubdate = "N/A"
+
+        try:
+            description1 = oneBook['description']
+        except Exception, e:
+            description1 = "N/A"
         
         newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1)
         # After I create the book, I can then add it to my session. 
