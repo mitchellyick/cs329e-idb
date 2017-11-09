@@ -58,7 +58,7 @@ def create_books():
             publisher_details.append(Publishers(name = pubname, wiki_url = pubwiki_url, description = pubdescription, owner = pubowner, image_url = pubimage_url, web_link = pubweb_link))
             db.session.add(publisher_details)
             db.session.commit()
-		authors = oneBook.get("authors","")
+        authors = oneBook.get("authors","")
         author_details = []
         for aut_det in authors:
             aname = aut_det.get("name","")
@@ -72,8 +72,8 @@ def create_books():
             db.session.add(author_details)
             db.session.commit()
         #newBook = Book(title = title, id = id)
-		# After I create the book, I can then add it to my session. 
+        # After I create the book, I can then add it to my session. 
         #session.add(newBook)
-		#commit the session to my DB.
+        #commit the session to my DB.
         #session.commit()
 create_books()

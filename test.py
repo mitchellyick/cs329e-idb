@@ -1,4 +1,4 @@
-from create_db import create_books, load_json
+from create_db import *
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import sessionmaker
@@ -11,4 +11,3 @@ class MyTest(TestCase):
 		create_books()
 
 		assert Title_details in db.session
-		
