@@ -128,7 +128,7 @@ class Authors(Base):
     wikipedia_url = Column(String(1000), primary_key = True)
     image_url = Column(String(1000))
     publisher = Column(String(100000))
-    title = Column(String(100000000))
+    title = Column(String(10485760))
 
 
 class Publishers(Base):
@@ -139,8 +139,8 @@ class Publishers(Base):
     owner = Column(String(200))
     image_url = Column(String(1000))
     web_link = Column(String(1000))
-    title = Column(String(1000000000))
-    author = Column(String(100000000))
+    title = Column(String(10485760))
+    author = Column(String(10485760))
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
