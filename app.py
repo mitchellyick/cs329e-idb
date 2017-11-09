@@ -17,7 +17,13 @@ def title():
 	return render_template('title.html')
 @app.route('/publisher')
 def publisher():
-	return render_template('publisher.html')			
+	return render_template('publisher.html')		
+
+@app.route('/unit_tests')
+def unit_tests():
+  output = subprocess.getoutput("python test.py")
+  return json.dumps({'output': str(output)})
+	
 
 if __name__ == '__main__':
 	app.run()
