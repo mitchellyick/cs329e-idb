@@ -99,7 +99,7 @@ def create_books():
         title = oneBook['title']
 
 
-        idb = oneBook['id']
+        idb = oneBook['google_id']
         
         newBook = Book(title = title, id = idb)
         # After I create the book, I can then add it to my session. 
