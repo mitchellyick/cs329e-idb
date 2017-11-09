@@ -23,7 +23,7 @@ def publisher():
 def unit_tests():
   output = subprocess.getoutput("python test.py")
   return json.dumps({'output': str(output)})
-	
+
 
 if __name__ == '__main__':
 	app.run()
