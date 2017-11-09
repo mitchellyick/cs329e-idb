@@ -118,9 +118,11 @@ def create_books():
         except:
             description1 = "N/A"
         authorstep1 = oneBook['authors']
-        author = authorstep1['name']
-        publishersstep1 = oneBook['publishers']
-        pub = publishersstep1['name']
+        for thing in authorstep1:
+            author = authorstep1['name']
+        publishersstep1 = oneBook['publishers'] 
+        for thinge in publishersstep1:
+            pub = publishersstep1['name']
         newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub)
         # After I create the book, I can then add it to my session. 
         session.add(newBook)
