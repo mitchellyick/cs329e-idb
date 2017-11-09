@@ -125,6 +125,7 @@ class Authors(Base):
     description = Column(String(100000))
     education = Column(String(100))
     nationality = Column(String(120))
+    alma_mater = Column(String(200))
     wikipedia_url = Column(String(1000), primary_key = True)
     image_url = Column(String(1000))
     publisher = Column(String(100000))

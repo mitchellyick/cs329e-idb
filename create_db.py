@@ -92,7 +92,7 @@ def load_json(filename):
 
     return jsn
 
-def create_books():
+def create_tables():
     book = load_json('books.json')
 
     for oneBook in book:
@@ -120,15 +120,78 @@ def create_books():
         authorstep1 = oneBook['authors']
         for thing in authorstep1:
             author = thing['name']
+            try:
+                born = thing['born']
+            except:
+                born = ""
+            try: 
+                died = thing['died']
+            except:
+                died = ""
+            dob = str(born) + " - " + str(died)
+            try:
+                education = thing['education']
+            except:
+                education = "N/A"
+            try:
+                nat = thing['nationality']
+            except:
+                nat = "N/A"
+
+            try:
+                descAuth = thing['description']
+            except:
+                descAuth = "N/A"
+            try:
+                alma = thing['alma_mater']
+            except:
+                alma = "N/A"
+
+            try:
+                wiki = thing['wikipedia_url']
+            except:
+                wiki = "N/A"
+
+            try:
+                a_im_url = thing['image_url']
+            except:
+                a_im_url = "N/A"
+
+
+
         publishersstep1 = oneBook['publishers'] 
         for thinge in publishersstep1:
             pub = thinge['name']
+            try:
+                owner = thing['owner']
+            except:
+                owner = "N/A"
+            try:
+                descpub = thing['description']
+            except:
+                descpub = "N/A"
+            try:
+                pub_im_url = thing['image_url']
+            except:
+                pub_im_url = "N/A"
+            try:
+                website = thing['website']
+            except:
+                website = "N/A"
+            try:
+                pub_wiki = thing['wikipedia_url']
+            except:
+                pub_wiki = "N/A"
+
+
         newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub)
         # After I create the book, I can then add it to my session. 
+        newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub)
+        newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki)
         session.add(newBook)
         # commit the session to my DB.
         session.commit()
         #print(title)
 
         
-create_books()
+create_tables()
