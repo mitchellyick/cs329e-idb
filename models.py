@@ -109,32 +109,32 @@ Base = declarative_base()
 
 class Titles(Base):
     __tablename__ = 'Titles'
-    title = Column(String(80), nullable=False)
+    title = Column(String(150), nullable=False)
     google_id = Column(String(80), primary_key = True)
     isbn = Column(String(80))
     publication_date = Column(String(80))
-    image_url = Column(String(80))
-    description = Column(String(80))
+    image_url = Column(String(1000))
+    description = Column(String(100000))
 
 class Authors(Base):
     __tablename__ = 'Authors'
-    name = Column(String(80), nullable=False)
+    name = Column(String(120), nullable=False)
     born = Column(String(50))
-    description = Column(String(100))
+    description = Column(String(100000))
     education = Column(String(100))
     nationality = Column(String(120))
-    wikipedia_url = Column(String(100), primary_key = True)
-    image_url = Column(String(100))
+    wikipedia_url = Column(String(1000), primary_key = True)
+    image_url = Column(String(1000))
 
 
 class Publishers(Base):
     __tablename__ = 'Publishers'
-    name = Column(String(80), nullable=False)
-    wiki_url = Column(String(150), primary_key = True)
-    description = Column(String(150))
-    owner = Column(String(100))
-    image_url = Column(String(100))
-    web_link = Column(String(100))
+    name = Column(String(120), nullable=False)
+    wiki_url = Column(String(1000), primary_key = True)
+    description = Column(String(100000))
+    owner = Column(String(200))
+    image_url = Column(String(1000))
+    web_link = Column(String(1000))
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
