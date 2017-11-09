@@ -33,7 +33,7 @@ class DBTestCases(unittest.TestCase):
         session.commit()
 
     def test_db_there_1(self):
-    	r = session.query(Titles).filter_by(google_id = 'wrOQLV6xB-wC').one()
+        r = session.query(Titles).filter_by(google_id = 'wrOQLV6xB-wC').one()
         self.assertEqual(str(r.google_id), 'wrOQLV6xB-wC')
 
 if __name__ == '__main__':
