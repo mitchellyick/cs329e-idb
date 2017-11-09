@@ -84,6 +84,4 @@ class Publishers(db.Model):
     web_link = db.Column(db.String(100))
     #creators = db.Column()
     #characters = db.Column()
-
-db.drop_all()
 db.create_all()
