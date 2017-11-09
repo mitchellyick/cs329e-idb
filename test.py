@@ -21,15 +21,15 @@ session = DBSession()
 
 class DBTestCases(unittest.TestCase):
     def test_source_insert_1(self):
-        s = Titles(id='20', title = 'C++')
+        s = Titles(google_id='20', title = 'C++')
         session.add(s)
         session.commit()
 
 
-        r = session.query(Book).filter_by(id = '20').one()
+        r = session.query(Book).filter_by(google_id = '20').one()
         self.assertEqual(str(r.id), '20')
 
-        session.query(Book).filter_by(id = '20').delete()
+        session.query(Book).filter_by(google_id = '20').delete()
         session.commit()
 
 if __name__ == '__main__':
