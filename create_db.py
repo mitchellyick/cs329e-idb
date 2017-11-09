@@ -98,12 +98,12 @@ def create_books():
     for oneBook in book:
         title = oneBook['title']
         idb = oneBook['google_id']
-        isbn = oneBook['isbn']
+        isbn1 = oneBook['isbn']
         pubdate = oneBook['publication_date']
         imurl = oneBook['image_url']
-        #description = oneBook['description']
+        description1 = oneBook['description']
         
-        newBook = Titles(title = title, google_id = idb, isbn = isbn, publication_date = pubdate, image_url = imurl)
+        newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1)
         # After I create the book, I can then add it to my session. 
         session.add(newBook)
         # commit the session to my DB.
