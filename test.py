@@ -39,7 +39,7 @@ class DBTestCases(unittest.TestCase):
 
     def test_db_there_2(self):
         #s = create_books()
-        r = session.query(Titles).filter_by(google_id = 'kPpeTrfXpKsC').one()
+        r = session.query(Titles).filter_by(google_id = 'kPpeTrfXpKsC').first()
         self.assertEqual(str(r.google_id), 'kPpeTrfXpKsC')
 
 if __name__ == '__main__':
