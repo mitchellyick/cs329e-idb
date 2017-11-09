@@ -26,10 +26,10 @@ class DBTestCases(unittest.TestCase):
         session.commit()
 
 
-        r = session.query(Book).filter_by(google_id = '20').one()
+        r = session.query(Titles).filter_by(google_id = '20').one()
         self.assertEqual(str(r.id), '20')
 
-        session.query(Book).filter_by(google_id = '20').delete()
+        session.query(Titles).filter_by(google_id = '20').delete()
         session.commit()
 
 if __name__ == '__main__':
