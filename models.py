@@ -107,11 +107,34 @@ from sqlalchemy import create_engine
 # corresponds to tables in our DB)
 Base = declarative_base()
 
-class Book(Base):
-    __tablename__ = 'book'
-    
-    title = Column(String(80), nullable = False)
-    id = Column(Integer, primary_key = True)
+class Titles(Base):
+    __tablename__ = 'Titles'
+    title = Column(String(80), nullable=False)
+    google_id = Column(String(80), primary_key = True)
+    isbn = Column(String(80))
+    publication_date = Column(String(80))
+    image_url = Column(String(80))
+    description = Column(String(80))
+
+class Authors(Base):
+    __tablename__ = 'Authors'
+    name = Column(String(80), nullable=False)
+    born = Column(String(50))
+    description = Column(String(100))
+    education = Column(String(100))
+    nationality = Column(String(120))
+    wikipedia_url = Column(String(100), primary_key = True)
+    image_url = Column(String(100))
+
+
+class Publishers(Base):
+    __tablename__ = 'Publishers'
+    name = Column(String(80), nullable=False)
+    wiki_url = Column(String(150), primary_key = True)
+    description = Column(String(150))
+    owner = Column(String(100))
+    image_url = Column(String(100))
+    web_link = Column(String(100))
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)

@@ -95,11 +95,13 @@ def load_json(filename):
 def create_books():
     book = load_json('books.json')
 
-    for oneBook in book['Books']:
+    for oneBook in book:
         title = oneBook['title']
-        id = oneBook['id']
+
+
+        idb = oneBook['id']
         
-        newBook = Book(title = title, id = id)
+        newBook = Book(title = title, id = idb)
         # After I create the book, I can then add it to my session. 
         session.add(newBook)
         # commit the session to my DB.
