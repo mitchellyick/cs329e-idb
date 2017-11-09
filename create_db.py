@@ -106,7 +106,7 @@ def create_books():
         session.add(newBook)
         # commit the session to my DB.
         session.commit()
-        print(title)
+        #print(title)
 
         
 create_books()
