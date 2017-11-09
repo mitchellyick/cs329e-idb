@@ -53,26 +53,35 @@ db = SQLAlchemy(app)
 
 class Titles(db.Model):
     __tablename__ = 'Titles'
-    name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    details = db.Column(db.String(140), nullable=False)
-    wiki = db.Column(db.String(140), nullable=False)
+    title = db.Column(db.String(80), nullable=False)
+    google_id = db.Column(db.String(80))
+    isbn = db.Column(db.String(80))
+    publication_date = db.Column(db.String(80))
+    image_url = db.Column(db.String(80))
+    description = db.Column(db.String(80))
     #series = db.Column()"""
 
 class Authors(db.Model):
     __tablename__ = 'Authors'
     name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    details = db.Column(db.String(120), nullable=False)
+    born = db.Column(db.String(50))
+    description = db.Column(db.String(100))
+    education = db.Column(db.String(100))
+    nationality = db.Column(db.String(120))
+    wikipedia_url = db.Column(db.String(100))
+    image_url = db.Column(db.String(100))
+
     #comics = db.Column(db.String(80), nullable=False)
     #series = db.Column()
 
 class Publishers(db.Model):
     __tablename__ = 'Publishers'
     name = db.Column(db.String(80), nullable=False)
-    id = db.Column(db.Integer, primary_key=True)
-    startyear = db.Column(db.Integer, primary_key=True)
-    endyear = db.Column(db.Integer, primary_key=True)
+    wiki_url = db.Column(db.String(150))
+    description = db.Column(db.String(150))
+    owner = db.Column(db.String(100))
+    image_url = db.Column(db.String(100))
+    web_link = db.Column(db.String(100))
     #creators = db.Column()
     #characters = db.Column()
 
