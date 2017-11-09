@@ -100,22 +100,22 @@ def create_books():
         idb = oneBook['google_id']
         try:
             isbn1 = oneBook['isbn']
-        except Exception, e:
+        except:
             isbn1 = "N/A"
         
         try:
             imurl = oneBook['image_url']
-        except Exception, e:
+        except:
             imurl = "N/A"
 
         try:
             pubdate = oneBook['publication_date']
-        except Exception, e:
+        except:
             pubdate = "N/A"
 
         try:
             description1 = oneBook['description']
-        except Exception, e:
+        except:
             description1 = "N/A"
         
         newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1)
