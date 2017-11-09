@@ -13,7 +13,7 @@ import unittest
 from models import Base, Titles, engine
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
+from create_db import *
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
@@ -33,7 +33,8 @@ class DBTestCases(unittest.TestCase):
         session.commit()
 
     def test_db_there_1(self):
-        r = session.query(Titles).filter_by(google_id = 'wrOQLV6xB-wC').one()
+    	s = create_books()
+        r = s.(Titles).filter_by(google_id = 'wrOQLV6xB-wC').one()
         self.assertEqual(str(r.google_id), 'wrOQLV6xB-wC')
 
 if __name__ == '__main__':
