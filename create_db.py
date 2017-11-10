@@ -206,3 +206,5 @@ def create_pub():
 
         
 create_tables()
+create_aut()
+create_pub()

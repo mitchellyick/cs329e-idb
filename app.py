@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 from models import Base, Titles, engine, Publishers, Authors
-from create_db import create_tables, session
+from create_db import *
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
