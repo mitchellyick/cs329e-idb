@@ -45,6 +45,7 @@
 <h4> Click on the table heading to sort (1 click: A-Z, 2 clicks: Z-A)</h4>
 
 <table BORDER = "2" id = "myTable">
+  <thead>
 		<tr>
             <th onclick="sortTable(0)">Titles</th>
             <th onclick="sortTable(1)">Authors</th>
@@ -57,6 +58,39 @@
 			
 			
 		</tr>
+  </thead>
+    <tbody>
+   {% for i in pubs %}
+      <tr>
+        <td>{% for x in books %}
+          {% if x.publisher == i.name %}
+            <p>{{x.title}}</p>
+            
+          {% endif %}
+        
+        {% endfor %}</td>
+        <td>{% for a in auths %}
+          {% if a.publisher == i.name %}
+            <p>{{a.name}}</p>
+            
+          {% endif %}
+        
+        {% endfor %}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.owner}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.image_url}}</td>
+        <td>{{i.web_link}}</td>
+        <td>{{i.wiki_url}}</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+        <!--<tr>
 		<tr>
             <td><a href="{{url_for('title')}}">Harry Potter and the Sorcerer's Stone</a></td>
             <td><a href="{{url_for('author')}}">J. K. Rowling</a></td>
@@ -89,6 +123,7 @@
       <td><a href = "http://PenguinGroup.com">http://PenguinGroup.com</a></td>
             <td>N/A</td>
     </tr>
+    </tr>-->
 
     <script>
 function sortTable(n) {

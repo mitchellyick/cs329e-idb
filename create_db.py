@@ -191,23 +191,23 @@ def create_pub():
         for thinge in publishersstep1:
             pub = thinge['name']
             try:
-                owner = thing['owner']
+                owner = thinge['owner']
             except:
                 owner = "N/A"
             try:
-                descpub = thing['description']
+                descpub = thinge['description']
             except:
                 descpub = "N/A"
             try:
-                pub_im_url = thing['image_url']
+                pub_im_url = thinge['image_url']
             except:
                 pub_im_url = "N/A"
             try:
-                website = thing['website']
+                website = thinge['website']
             except:
                 website = "N/A"
             try:
-                pub_wiki = thing['wikipedia_url']
+                pub_wiki = thinge['wikipedia_url']
             except:
                 pub_wiki = "N/A"
 

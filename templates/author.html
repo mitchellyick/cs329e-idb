@@ -58,16 +58,22 @@
   <tbody>
    {% for i in auths %}
       <tr>
-        <td>{{i.born}}</td>
-        <td>{{i.name}}</td>
-        <td>{{i.education}}</td>
-        <td>{{i.nationality}}</td>
-        <td>{{i.description}}</td>
-        <td>{{i.alma_mater}}</td>
-        <td>{{i.wikipedia_url}}</td>
-        <td>{{i.image_url}}</td>
-        <td>{{i.titles}}</td>
-        <td>{{i.publisher}}</td>
+        <td width="10%">{{i.born}}</td>
+        <td width="10%">{{i.name}}</td>
+        <td width="10%">{{i.education}}</td>
+        <td width="10%">{{i.nationality}}</td>
+        <td width="10%">{{i.description}}</td>
+        <td width="10%">{{i.alma_mater}}</td>
+        <td width="1%"><a herf =i.wikipedia_url>{{i.wikipedia_url}}</td>
+        <td width="10%">{{i.image_url}}</td>
+        <td width="10%">{% for x in books %}
+          {% if x.author == i.name %}
+            <p>{{x.title}}</p>
+            
+          {% endif %}
+        
+        {% endfor %}</td>
+        <td width="10%">{{i.publisher}}</td>
       </tr>
       {% endfor %}
   </tbody>
