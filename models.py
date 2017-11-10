@@ -145,7 +145,7 @@ class Publishers(Base):
     author = Column(String(10485760))
     val = Column(Integer)
 
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/ookdb')
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 Base.metadata.drop_all(engine)
