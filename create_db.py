@@ -214,7 +214,7 @@ def create_pub():
             newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki, val = 0)
 
         
-            if session.query(Publishers).filter(Publishers.name == newPub.name).val ==0: 
+            if session.query(Publishers).filter(Publishers.name == newPub.name).count() ==0: 
                 session.add(newPub)
                 session.commit()
                 counter+=1
