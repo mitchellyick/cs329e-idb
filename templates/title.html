@@ -45,13 +45,19 @@
 
 		</tr>
 		<tbody>
-
-      {% for i in books %}
-      <tr>
-        <td>{{i.title}}</td>
-         
-      </tr>
-      {% endfor %}
+      <h1>Books</h1>
+        {% if books == [] %}
+          <p>No books exist</p> 
+      
+        {% else %}
+          {% for i in books %}
+            <div> 
+              {{i.title}}
+          
+            <br/> <br/>
+            </div>
+          {% endfor %}
+        {% endif %}
   </tbody>
 </table>
     <!--<tr>
