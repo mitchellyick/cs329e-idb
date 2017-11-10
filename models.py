@@ -117,6 +117,7 @@ class Titles(Base):
     description = Column(String(100000))
     publisher = Column(String(100000))
     author = Column(String(1000))
+    val = Column(Integer)
 
 class Authors(Base):
     __tablename__ = 'Authors'
@@ -130,7 +131,7 @@ class Authors(Base):
     image_url = Column(String(1000))
     publisher = Column(String(100000))
     title = Column(String(10485760))
-
+    val = Column(Integer)
 
 class Publishers(Base):
     __tablename__ = 'Publishers'
@@ -142,6 +143,7 @@ class Publishers(Base):
     web_link = Column(String(1000))
     title = Column(String(10485760))
     author = Column(String(10485760))
+    val = Column(Integer)
 
 SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)

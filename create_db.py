@@ -117,6 +117,13 @@ def create_tables():
             description1 = oneBook['description']
         except:
             description1 = "N/A"
+        newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub, val = 0) 
+        session.add(newBook)
+        session.commit()
+def create_aut():
+    counter = 0
+    book = load_json('books.json')
+    for oneBook in book:
         authorstep1 = oneBook['authors']
         for thing in authorstep1:
             author = thing['name']
@@ -146,19 +153,25 @@ def create_tables():
                 alma = thing['alma_mater']
             except:
                 alma = "N/A"
-
             try:
                 wiki = thing['wikipedia_url']
             except:
                 wiki = "N/A"
-
             try:
                 a_im_url = thing['image_url']
             except:
                 a_im_url = "N/A"
+            newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
+            if session.query(Authors).filter(Authors.name == newAut.name).val() == 0: 
+                session.add(newAut)
+                session.commit()
+                counter +=1
 
 
-
+def create_pub():
+    counter = 0
+    book = load_json('books.json')
+    for oneBook in book:
         publishersstep1 = oneBook['publishers'] 
         for thinge in publishersstep1:
             pub = thinge['name']
@@ -183,19 +196,13 @@ def create_tables():
             except:
                 pub_wiki = "N/A"
 
+            newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki, val = 0)
 
-        newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub) 
-        newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub)
-        newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki)
-        session.add(newBook)
-        if session.query(Authors).filter(Authors.name == newAut.name): 
-            session.add(newAut)
-            session.commit()
         
-        if session.query(Publishers).filter(Publishers.name == newPub.name): 
-            session.add(newPub)
-            session.commit()
-        session.commit()
+            if session.query(Publishers).filter(Publishers.name == newPub.name).val() == 0: 
+                session.add(newPub)
+                session.commit()
+                counter+=1
 
         
 create_tables()
