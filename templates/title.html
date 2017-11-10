@@ -42,26 +42,13 @@
 <table BORDER = "2" id = "myTable">
 		<tr>
 			<th onclick="sortTable(0)">Google ID</th>
-			<th onclick="sortTable(1)">Title</th>
-			<th onclick="sortTable(2)">ISBN</th>
-			<th onclick="sortTable(3)">Publication Date</th>
-			<th onclick="sortTable(4)">Image</th>
-			<th onclick="sortTable(5)">Description</th>
-			<th onclick="sortTable(6)">Publishers</th>
-			<th onclick="sortTable(7)">Author</th>
+
 		</tr>
 		<tbody>
       {% for i in books %}
       <tr>
         <td>{{i.publication_date}}</td>
-         <td>{{i.title}}</td>
-          <td>{{i.google_id}}</td>
-          <td>{{i.isbn}}</td>
-          <td>{{i.publication_date}}</td>
-          <td>{{i.image_url}}</td>
-          <td>{{i.description}}</td>
-          <td>{{i.author}}</td>
-          <td>{{i.publisher}}</td>
+         
       </tr>
       {% endfor %}
   </tbody>
