@@ -11,6 +11,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--jq stuffs-->
+       
 </head>
 
 <body>
@@ -39,7 +41,8 @@
 <h1> Authors </h1><hr/>
 <h4> Click on the table heading to sort (1 click: A-Z, 2 clicks: Z-A)</h4>
 <table BORDER = "2" id = "myTable">
-		<tr>
+		<thead>
+    <tr>
 			<th onclick="sortTable(0)">Born</th>
 			<th onclick="sortTable(1)">Name</th>
 			<th onclick="sortTable(2)">Education</th>
@@ -51,7 +54,37 @@
 			<th onclick="sortTable(8)">Titles</th>
 			<th onclick="sortTable(9)">Publishers</th>
 		</tr>
-		<tr>
+  </thead>
+  <tbody>
+      <?php
+          $connect = new PDO('mysql:host=/cloudsql/cs329e-idb-184123:us-central1:bookdb;dbname=bookdb', 'postgres', 'asd123');
+          if(!$connect){
+            die(mysql_error());
+          }
+
+          mysql_select_db("bookdb")
+          $reults = mysql_query("SELECT * FROM Authors");
+          while($row = mysql_fetch_array($results))
+
+      ?>
+      <tr>
+        <td><?php echo $row['name']?></td>
+        <td><?php echo $row['Born']?></td>
+        <td><?php echo $row['Description']?></td>
+        <td><?php echo $row['Nationality']?></td>
+        <td><?php echo $row['Description']?></td>
+        <td><?php echo $row['Alma']?></td>
+        <td><?php echo $row['wikipedia_url']?></td>
+        <td><?php echo $row['image_url']?></td>
+        <td><?php echo $row['publisher']?></td>
+        <td><?php echo $row['title']?></td>
+
+      </tr>
+  </tbody>
+</table>
+
+
+		<!--<tr>
 			<td>1965-07-31</td>
 			<td>J. K. Rowling</td>
 			<td>Bachelor of Arts</td>
@@ -86,8 +119,8 @@
 			<td>N/A</td>
 			<td><a href="{{url_for('title')}}">The Very Hungry Caterpillar</a></td>
 			<td><a href="{{url_for('publisher')}}">Penguin Group</a></td>
-		</tr>
-		<script>
+		</tr>-->
+<script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("myTable");
