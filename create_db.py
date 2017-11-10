@@ -173,7 +173,7 @@ def create_aut():
                 pub = thinge['name']
 
             newAut =  Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
-            if session.query(Authors).filter(Authors.name == newAut.name).val ==0: 
+            if session.query(Authors).filter(Authors.name == newAut.name).count() ==0: 
                 session.add(newAut)
                 session.commit()
                 counter +=1
