@@ -121,7 +121,7 @@ class Titles(Base):
 
 class Authors(Base):
     __tablename__ = 'Authors'
-    name = Column(String(1200), , primary_key = True, nullable=False)
+    name = Column(String(1200), primary_key = True, nullable=False)
     born = Column(String(5000))
     description = Column(String(100000))
     education = Column(String(10000))
