@@ -173,7 +173,7 @@ def create_aut():
                 pub = thinge['name']
 
             newAut =  Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
-            if session.query(Authors).filter(Authors.name == newAut.name).val() == 0: 
+            if session.query(Authors).filter(Authors.name == newAut.name): 
                 session.add(newAut)
                 session.commit()
                 counter +=1
@@ -214,7 +214,7 @@ def create_pub():
             newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki, val = 0)
 
         
-            if session.query(Publishers).filter(Publishers.name == newPub.name).val() == 0: 
+            if session.query(Publishers).filter(Publishers.name == newPub.name): 
                 session.add(newPub)
                 session.commit()
                 counter+=1
