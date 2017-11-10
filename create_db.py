@@ -184,16 +184,14 @@ def create_tables():
                 pub_wiki = "N/A"
 
 
-        newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub)
-        # After I create the book, I can then add it to my session. 
+        newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub) 
         newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub)
         newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki)
         session.add(newBook)
         session.add(newAut)
         session.add(newPub)
-        # commit the session to my DB.
         session.commit()
-        #print(title)
+        
 
         
 create_tables()

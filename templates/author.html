@@ -56,30 +56,19 @@
 		</tr>
   </thead>
   <tbody>
-      <?php
-          $connect = new PDO('mysql:host=/cloudsql/cs329e-idb-184123:us-central1:bookdb;dbname=bookdb', 'postgres', 'asd123');
-          if(!$connect){
-            die(mysql_error());
-          }
-
-          mysql_select_db("bookdb")
-          $reults = mysql_query("SELECT * FROM Authors");
-          while($row = mysql_fetch_array($results))
-
-      ?>
+   {% for i in books %}
       <tr>
-        <td><?php echo $row['name']?></td>
-        <td><?php echo $row['Born']?></td>
-        <td><?php echo $row['Description']?></td>
-        <td><?php echo $row['Nationality']?></td>
-        <td><?php echo $row['Description']?></td>
-        <td><?php echo $row['Alma']?></td>
-        <td><?php echo $row['wikipedia_url']?></td>
-        <td><?php echo $row['image_url']?></td>
-        <td><?php echo $row['publisher']?></td>
-        <td><?php echo $row['title']?></td>
-
+        <td>{{i.title.publication_date}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.title.google_id}}</td>
+        <td>{{i.title.isbn}}</td>
+        <td>{{i.title.publication_date}}</td>
+        <td>{{i.title.image_url}}</td>
+        <td>{{i.title.description}}</td>
+        <td>{{i.title.author}}</td>
+        <td>{{i.title.publisher}}</td>
       </tr>
+      {% endfor %}
   </tbody>
 </table>
 

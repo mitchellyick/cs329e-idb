@@ -50,7 +50,23 @@
 			<th onclick="sortTable(6)">Publishers</th>
 			<th onclick="sortTable(7)">Author</th>
 		</tr>
-		<tr>
+		<tbody>
+      {% for i in books %}
+      <tr>
+        <td>{{i.publication_date}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.google_id}}</td>
+        <td>{{i.isbn}}</td>
+        <td>{{i.publication_date}}</td>
+        <td>{{i.image_url}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.author}}</td>
+        <td>{{i.publisher}}</td>
+      </tr>
+      {% endfor %}
+  </tbody>
+</table>
+    <!--<tr>
 			<td>wrOQLV6xB-wC</td>
 			<td>Harry Potter and the Sorcerer's Stone</td>
 			<td>9781781100486</td>
@@ -79,7 +95,7 @@
 			<td>This much-loved classic picture book follows the caterpillar's week while he eats through a range of foods in preparation for his hibernation and subsequent appearance as a beautiful butterfly. With its die-cut pages and holes to explore, this is a richly satisfying book for children. The cuddly caterpillar toy can be pushed through the giant holes as children follow this simple, hopeful story.</td>
 			<td><a href="{{url_for('publisher')}}">Penguin Group</a></td>
 			<td><a href="{{url_for('author')}}">Eric Carle</a></td>
-		</tr>
+		</tr> -->
 
 		<script>
 function sortTable(n) {
