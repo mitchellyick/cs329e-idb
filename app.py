@@ -16,6 +16,7 @@ def about():
 	return render_template('about.html')
 @app.route('/author')
 def author():
+	auths = session.query(Authors).all()
 	return render_template('author.html')
 @app.route('/title')
 def title():
@@ -23,6 +24,7 @@ def title():
 	return render_template('title.html')
 @app.route('/publisher')
 def publisher():
+	pubs = session.query(Publishers).all()
 	return render_template('publisher.html')		
 
 @app.route('/unit_tests')
