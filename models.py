@@ -122,7 +122,7 @@ class Titles(Base):
 class Authors(Base):
     __tablename__ = 'Authors'
     name = Column(String(120), nullable=False)
-    born = Column(String(50))
+    born = Column(String(500))
     description = Column(String(100000))
     education = Column(String(100))
     nationality = Column(String(120))
