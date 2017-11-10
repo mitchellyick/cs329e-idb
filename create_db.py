@@ -169,10 +169,10 @@ def create_aut():
                 a_im_url = thing['image_url']
             except:
                 a_im_url = "N/A"
-        for thinge in publishersstep1:
-            pub = thinge['name']
+            for thinge in publishersstep1:
+                pub = thinge['name']
 
-            newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
+            newAut =  Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
             if session.query(Authors).filter(Authors.name == newAut.name).val() == 0: 
                 session.add(newAut)
                 session.commit()
