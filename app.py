@@ -1,5 +1,10 @@
 from flask import Flask
 from flask import render_template
+from models import Base, Titles, engine, Publishers, Authors
+from create_db import create_tables, session
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
+
 app = Flask(__name__)
 	
 @app.route('/')
@@ -14,6 +19,7 @@ def author():
 	return render_template('author.html')
 @app.route('/title')
 def title():
+	books = session.query(Titles).all()
 	return render_template('title.html')
 @app.route('/publisher')
 def publisher():
