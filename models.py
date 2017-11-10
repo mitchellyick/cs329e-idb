@@ -109,8 +109,8 @@ Base = declarative_base()
 
 class Titles(Base):
     __tablename__ = 'Titles'
-    title = Column(String(1500), nullable=False)
-    google_id = Column(String(80), primary_key = True)
+    title = Column(String(1500), primary_key = True, nullable=False)
+    google_id = Column(String(80))
     isbn = Column(String(80))
     publication_date = Column(String(80))
     image_url = Column(String(1000))
@@ -121,13 +121,13 @@ class Titles(Base):
 
 class Authors(Base):
     __tablename__ = 'Authors'
-    name = Column(String(1200), nullable=False)
+    name = Column(String(1200), , primary_key = True, nullable=False)
     born = Column(String(5000))
     description = Column(String(100000))
     education = Column(String(10000))
     nationality = Column(String(120))
     alma_mater = Column(String(200))
-    wikipedia_url = Column(String(1000), primary_key = True)
+    wikipedia_url = Column(String(1000))
     image_url = Column(String(1000))
     publisher = Column(String(100000))
     title = Column(String(10485760))
@@ -135,8 +135,8 @@ class Authors(Base):
 
 class Publishers(Base):
     __tablename__ = 'Publishers'
-    name = Column(String(1200), nullable=False)
-    wiki_url = Column(String(1000), primary_key = True)
+    name = Column(String(1200), primary_key = True, nullable=False)
+    wiki_url = Column(String(1000))
     description = Column(String(100000))
     owner = Column(String(200))
     image_url = Column(String(1000))
