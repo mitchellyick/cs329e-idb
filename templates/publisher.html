@@ -79,7 +79,12 @@
         <td>{{i.name}}</td>
         <td>{{i.owner}}</td>
         <td>{{i.description}}</td>
-        <td>{{i.image_url}}</td>
+        <td>{% if i.image_url == "N/A" %}
+            <p>N/A</p>
+          {% else %}
+            <img src="{{i.image_url}}" height="200" width = "200"></td>
+          {% endif %}
+          </td>
         <td>{{i.web_link}}</td>
         <td>{{i.wiki_url}}</td>
       </tr>

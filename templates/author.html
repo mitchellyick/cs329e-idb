@@ -40,40 +40,46 @@
 </nav>
 <h1> Authors </h1><hr/>
 <h4> Click on the table heading to sort (1 click: A-Z, 2 clicks: Z-A)</h4>
-<table BORDER = "2" id = "myTable">
+<table BORDER = "2" id = "myTable" width = "10">
 		<thead>
     <tr>
-			<th onclick="sortTable(0)">Born</th>
-			<th onclick="sortTable(1)">Name</th>
-			<th onclick="sortTable(2)">Education</th>
-			<th onclick="sortTable(3)">Nationality</th>
-			<th onclick="sortTable(4)">Description</th>
-			<th onclick="sortTable(5)">Alma Mater</th>
-			<th onclick="sortTable(6)">Wikipedia URL</th>
-			<th onclick="sortTable(7)">Image</th>
-			<th onclick="sortTable(8)">Titles</th>
-			<th onclick="sortTable(9)">Publishers</th>
+			<th onclick="sortTable(0)" width="1">Born</th>
+			<th onclick="sortTable(1)" width="1">Name</th>
+			<th onclick="sortTable(2)" width="1">Education</th>
+			<th onclick="sortTable(3)" width="1">Nationality</th>
+			<th onclick="sortTable(4)" width="1">Description</th>
+			<th onclick="sortTable(5)" width="1">Alma Mater</th>
+			<th onclick="sortTable(6)" width="1">Wikipedia URL</th>
+			<th onclick="sortTable(7)" width="1">Image</th>
+			<th onclick="sortTable(8)" width="1">Titles</th>
+			<th onclick="sortTable(9)" width="1">Publishers</th>
 		</tr>
   </thead>
   <tbody>
    {% for i in auths %}
       <tr>
-        <td width="10%">{{i.born}}</td>
-        <td width="10%">{{i.name}}</td>
-        <td width="10%">{{i.education}}</td>
-        <td width="10%">{{i.nationality}}</td>
-        <td width="10%">{{i.description}}</td>
-        <td width="10%">{{i.alma_mater}}</td>
-        <td width="1%"><a herf =i.wikipedia_url>{{i.wikipedia_url}}</td>
-        <td width="10%">{{i.image_url}}</td>
-        <td width="10%">{% for x in books %}
+        <td width="1">{{i.born}}</td>
+        <td width="1">{{i.name}}</td>
+        <td width="1">{{i.education}}</td>
+        <td width="1">{{i.nationality}}</td>
+        <td width="1">{{i.description}}</td>
+        <td width="1">{{i.alma_mater}}</td>
+        <td width="1"><a herf ="{{i.wikipedia_url}}">{{i.wikipedia_url}}</td>
+        <td >
+          {% if i.image_url == "N/A" %}
+            <p>N/A</p>
+          {% else %}
+            <img src="{{i.image_url}}" height="200"></td>
+          {% endif %}
+          
+        <td width="1">{% for x in books %}
           {% if x.author == i.name %}
             <p>{{x.title}}</p>
             
           {% endif %}
         
         {% endfor %}</td>
-        <td width="10%">{{i.publisher}}</td>
+        <td width="1">{{i.publisher}}</td>
       </tr>
       {% endfor %}
   </tbody>

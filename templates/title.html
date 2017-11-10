@@ -58,7 +58,12 @@
         <td>{{i.title}}</td>
         <td>{{i.isbn}}</td>
         <td>{{i.publication_date}}</td>
-        <td>{{i.image_url}}</td>
+        <td>{% if i.image_url == "N/A" %}
+            <p>N/A</p>
+          {% else %}
+            <img src="{{i.image_url}}" height="100"></td>
+          {% endif %}
+          </td>
         <td>{{i.description}}</td>
         <td>{{i.publisher}}</td>
         <td>{{i.author}}</td>
