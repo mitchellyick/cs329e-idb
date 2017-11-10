@@ -131,6 +131,7 @@ def create_aut():
     book = load_json('books.json')
     for oneBook in book:
         title = oneBook['title']
+        publishersstep1 = oneBook['publishers'] 
         authorstep1 = oneBook['authors']
         for thing in authorstep1:
             author = thing['name']
@@ -183,6 +184,7 @@ def create_pub():
     book = load_json('books.json')
     for oneBook in book:
         title = oneBook['title']
+        authorstep1 = oneBook['authors']
         publishersstep1 = oneBook['publishers'] 
         for thing in authorstep1:
             author = thing['name']
