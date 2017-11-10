@@ -117,6 +117,12 @@ def create_tables():
             description1 = oneBook['description']
         except:
             description1 = "N/A"
+        authorstep1 = oneBook['authors']
+        for thing in authorstep1:
+            author = thing['name']
+        publishersstep1 = oneBook['publishers'] 
+        for thinge in publishersstep1:
+            pub = thinge['name']
         newBook = Titles(title = title, google_id = idb, isbn = isbn1, publication_date = pubdate, image_url = imurl, description = description1, author = author, publisher = pub, val = 0) 
         session.add(newBook)
         session.commit()
@@ -124,6 +130,7 @@ def create_aut():
     counter = 0
     book = load_json('books.json')
     for oneBook in book:
+        title = oneBook['title']
         authorstep1 = oneBook['authors']
         for thing in authorstep1:
             author = thing['name']
@@ -161,6 +168,7 @@ def create_aut():
                 a_im_url = thing['image_url']
             except:
                 a_im_url = "N/A"
+
             newAut = Authors(born = dob, name = author, education = education, nationality = nat, description = descAuth, alma_mater = alma, wikipedia_url = wiki, image_url = a_im_url, title = title, publisher = pub,val = counter)
             if session.query(Authors).filter(Authors.name == newAut.name).val() == 0: 
                 session.add(newAut)
@@ -172,6 +180,7 @@ def create_pub():
     counter = 0
     book = load_json('books.json')
     for oneBook in book:
+        title = oneBook['title']
         publishersstep1 = oneBook['publishers'] 
         for thinge in publishersstep1:
             pub = thinge['name']
