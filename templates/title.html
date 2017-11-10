@@ -45,9 +45,9 @@
 
 		</tr>
 		<tbody>
-      {if books == []}
-      <tr> NOthing</tr>
-      
+      {%if books == []%}
+        <tr> NOthing</tr>
+
       {% for i in books %}
       <tr>
         <td>{{i.title}}</td>
