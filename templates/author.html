@@ -56,19 +56,19 @@
 		</tr>
   </thead>
   <tbody>
-   {% for i in auths %}
-      <tr>
-        <td>{{i.title.publication_date}}</td>
-        <td>{{i.title}}</td>
-        <td>{{i.title.google_id}}</td>
-        <td>{{i.title.isbn}}</td>
-        <td>{{i.title.publication_date}}</td>
-        <td>{{i.title.image_url}}</td>
-        <td>{{i.title.description}}</td>
-        <td>{{i.title.author}}</td>
-        <td>{{i.title.publisher}}</td>
-      </tr>
+   <h1>Books</h1>
+    {% if books == [] %}
+      <p>No books exist</p> 
+      
+    {% else %}
+      {% for i in books %}
+        <div> 
+          {{i.title}}
+          
+          <br/> <br/>
+        </div>
       {% endfor %}
+    {% endif %}
   </tbody>
 </table>
 
