@@ -101,22 +101,22 @@ def create_tables():
         try:
             isbn1 = oneBook['isbn']
         except:
-            isbn1 = "N/A"
+            isbn1 = ""
         
         try:
             imurl = oneBook['image_url']
         except:
-            imurl = "N/A"
+            imurl = ""
 
         try:
             pubdate = oneBook['publication_date']
         except:
-            pubdate = "N/A"
+            pubdate = ""
 
         try:
             description1 = oneBook['description']
         except:
-            description1 = "N/A"
+            description1 = ""
         authorstep1 = oneBook['authors']
         for thing in authorstep1:
             author = thing['name']
@@ -147,28 +147,28 @@ def create_aut():
             try:
                 education = thing['education']
             except:
-                education = "N/A"
+                education = ""
             try:
                 nat = thing['nationality']
             except:
-                nat = "N/A"
+                nat = ""
 
             try:
                 descAuth = thing['description']
             except:
-                descAuth = "N/A"
+                descAuth = ""
             try:
                 alma = thing['alma_mater']
             except:
-                alma = "N/A"
+                alma = ""
             try:
                 wiki = thing['wikipedia_url']
             except:
-                wiki = "N/A"
+                wiki = ""
             try:
                 a_im_url = thing['image_url']
             except:
-                a_im_url = "N/A"
+                a_im_url = ""
             for thinge in publishersstep1:
                 pub = thinge['name']
 
@@ -193,23 +193,23 @@ def create_pub():
             try:
                 owner = thing['owner']
             except:
-                owner = "N/A"
+                owner = ""
             try:
                 descpub = thing['description']
             except:
-                descpub = "N/A"
+                descpub = ""
             try:
                 pub_im_url = thing['image_url']
             except:
-                pub_im_url = "N/A"
+                pub_im_url = ""
             try:
                 website = thing['website']
             except:
-                website = "N/A"
+                website = ""
             try:
                 pub_wiki = thing['wikipedia_url']
             except:
-                pub_wiki = "N/A"
+                pub_wiki = ""
 
             newPub= Publishers(title= title, author= author, name = pub, owner = owner, description = descpub, image_url = pub_im_url, web_link = website, wiki_url = pub_wiki)
 
