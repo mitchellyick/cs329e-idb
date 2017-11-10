@@ -10,7 +10,7 @@ def test_create(self):
 '''
 import os
 import unittest
-from models import Base, Titles, engine
+from models import Base, Titles, engine, Publishers, Authors
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from create_db import *
