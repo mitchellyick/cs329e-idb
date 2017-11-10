@@ -58,15 +58,16 @@
   <tbody>
    {% for i in auths %}
       <tr>
-        <td>{{i.title.publication_date}}</td>
-        <td>{{i.title}}</td>
-        <td>{{i.title.google_id}}</td>
-        <td>{{i.title.isbn}}</td>
-        <td>{{i.title.publication_date}}</td>
-        <td>{{i.title.image_url}}</td>
-        <td>{{i.title.description}}</td>
-        <td>{{i.title.author}}</td>
-        <td>{{i.title.publisher}}</td>
+        <td>{{i.born}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.education}}</td>
+        <td>{{i.nationality}}</td>
+        <td>{{i.description}}</td>
+        <td>{{i.alma_mater}}</td>
+        <td>{{i.wikipedia_url}}</td>
+        <td>{{i.image_url}}</td>
+        <td>{{i.titles}}</td>
+        <td>{{i.publisher}}</td>
       </tr>
       {% endfor %}
   </tbody>

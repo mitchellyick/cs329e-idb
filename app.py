@@ -17,15 +17,15 @@ def about():
 @app.route('/author')
 def author():
 	auths = session.query(Authors).all()
-	return render_template('author.html')
+	return render_template('author.html',auths = auths)
 @app.route('/title')
 def title():
 	books = session.query(Titles).all()
-	return render_template('title.html')
+	return render_template('title.html', books = books)
 @app.route('/publisher')
 def publisher():
 	pubs = session.query(Publishers).all()
-	return render_template('publisher.html')		
+	return render_template('publisher.html', pubs = pubs)		
 
 @app.route('/unit_tests')
 def unit_tests():

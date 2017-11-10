@@ -95,7 +95,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base 
 
 # for writing mapper code (create out foreign key relationship)
-from sqlalchemy.orm import relationship
+from sqlalchemy.orm import relationship, sessionmaker
 
 # for configuring code at the end of the file
 from sqlalchemy import create_engine
@@ -145,7 +145,7 @@ class Publishers(Base):
     author = Column(String(10485760))
     val = Column(Integer)
 
-SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost/bookdb')
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'postgresql://postgres:asd123@localhost')
 engine = create_engine(SQLALCHEMY_DATABASE_URI)
 
 Base.metadata.drop_all(engine)
