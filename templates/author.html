@@ -40,7 +40,7 @@
 </nav>
 <h1> Authors </h1><hr/>
 <h4> Click on the table heading to sort (1 click: A-Z, 2 clicks: Z-A)</h4>
-<table BORDER = "2" id = "myTable" width = "10">
+<table id = "table" BORDER = "2" id = "myTable" width = "10">
 		<thead>
     <tr>
 			<th onclick="sortTable(0)" width="1">Born</th>
@@ -85,7 +85,6 @@
   </tbody>
 </table>
 
-
 		<!--<tr>
 			<td>1965-07-31</td>
 			<td>J. K. Rowling</td>
@@ -123,6 +122,7 @@
 			<td><a href="{{url_for('publisher')}}">Penguin Group</a></td>
 		</tr>-->
 <script>
+
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
   table = document.getElementById("myTable");
@@ -178,6 +178,7 @@ function sortTable(n) {
   }
 }
 </script>
+
 </body>
 
 </html>

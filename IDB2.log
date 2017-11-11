@@ -1,0 +1,700 @@
+commit 0062d6e32630228167d876b243b931545ab40e95
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 13:22:28 2017 -0600
+
+    Major visual improvements
+
+commit d89a6299e621e5c676cbdbb76d2588cb16929fe3
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 12:23:26 2017 -0600
+
+    Forgot to add bookdb back in
+
+commit cc6b0e9dc81551cfbd0b3931141fcd26026a8a15
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 12:22:38 2017 -0600
+
+    Correctly outputed everything in the table
+
+commit 89fbe54852454b75e4425ead3d72b308f244656b
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 11:24:11 2017 -0600
+
+    Syntax error
+
+commit 2d5cb6eb8f6a009ac31391eae80c2dbaee74c31f
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 11:22:17 2017 -0600
+
+    Reverting change to fix 502
+
+commit b8fc4b1a6829421910cff16b5cdb54343c1f7047
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 11:06:19 2017 -0600
+
+    Tables should be working
+
+commit 1fc7c72f5acfcfb6a1721f5548ec2c5c6d401b2c
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 10:16:20 2017 -0600
+
+    Syntax for table
+
+commit 6dc5956cd9188e055c2c863b5e80208b2232168d
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 10:02:29 2017 -0600
+
+    Fix 502
+
+commit 9c60b1922761c5685ac12794d41943b809a000f4
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 09:48:23 2017 -0600
+
+    Test database on authors page
+
+commit 4e6ed17fbcb48bf6041e0b50fda037f6883d0b30
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 02:45:09 2017 -0600
+
+    Reverting changes
+
+commit 10fb0a348f5a71d0b8b054d8d4a2c98600be5c37
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 02:36:29 2017 -0600
+
+    Check data for table
+
+commit 962eb99cde586ee24e0971bc07437871248b0001
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 02:22:17 2017 -0600
+
+    Check if data is there
+
+commit ff5be3863b8ec06f034883a257019e42bddd3da3
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 02:12:00 2017 -0600
+
+    Incremental table
+
+commit edbfc83d6250342ad7c3f4f47bd5a42d07208d57
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 01:58:03 2017 -0600
+
+    Try to load in data
+
+commit a452ec7975163ce5cfe749c47613c56a154b4829
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 01:34:20 2017 -0600
+
+    Incremental table
+
+commit 7b7119e1272df0e7e85a7325c2dbe7ac37a7f117
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 01:17:51 2017 -0600
+
+    Fix to booksgalore not loading
+
+commit b9cb548176442aba8575558105ec3973369a3855
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 00:57:01 2017 -0600
+
+    Slow step into running tables for GCP
+
+commit 21df5534f408fa2f79d0d42559b8bbd35c8e4e11
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 00:34:48 2017 -0600
+
+    Fixed syntax error
+
+commit 0babadae90a5d50c4feef3dfa2596fde8cd31515
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 00:33:18 2017 -0600
+
+    Possible fix to travis, 1
+
+commit 41a14cc2aac546d1b002614e32cc813ad94107d0
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Fri Nov 10 00:26:43 2017 -0600
+
+    Potential fix
+
+commit aa456b3043568a06f916a81fe3c17d33813e7a2b
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 22:18:34 2017 -0600
+
+    Running out of stuff to say
+
+commit dd5dc26f6af11f34d86e2e42d4f88a6f32a02bd9
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 22:16:24 2017 -0600
+
+    Trying to get Travis to pass2
+
+commit 32353183f78466ad9c3ba6e4a963cb638c98a8a8
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 22:14:15 2017 -0600
+
+    Trying to get Travis to pass-late
+
+commit bd785ffd29e889a58e5845130cbbfe90b0991e69
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 22:03:13 2017 -0600
+
+    Late assignment try 1
+
+commit 6052c4b32ad1ad8a4694c345625e88d8db7b0921
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 22:01:54 2017 -0600
+
+    Trying to get Travis to pass
+
+commit 59faf1211da9e8852a1f6be9d22315340b66051c
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:59:15 2017 -0600
+
+    Last hope
+
+commit a228a4c68a4df89921816f0706f26af5758d9c48
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:55:14 2017 -0600
+
+    Trying to get Travis to pass
+
+commit 1569e33f832a45f863e494d2346c27755717d94b
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:52:29 2017 -0600
+
+    Added more changes7
+
+commit a42031cb2e953d8cf73343cd12e23e880883870b
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:44:58 2017 -0600
+
+    Almost done5
+
+commit 1c4da951c3e6b97ec0a74c084a18e6c51b37115e
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:43:26 2017 -0600
+
+    Added more changes4
+
+commit 709bdeb4982f779dd7b10269d9f2a6c9ced49094
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:41:19 2017 -0600
+
+    Added more changes3
+
+commit 13e0c6cd68a9e11eb7db89faa2742b6fd84c4506
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:38:44 2017 -0600
+
+    Almost done2
+
+commit f8356d48606c190664a0ffe2230a5cb469c3cc26
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:37:45 2017 -0600
+
+    Added more changes1
+
+commit b8594842ae861b5fefd3b73e252fbb4a1f983187
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:35:51 2017 -0600
+
+    Almost done
+
+commit 906c73d9c961651882b9fee7d0b157da69601890
+Author: Mitchell Yick <mitchellyick@utexas.edu>
+Date:   Thu Nov 9 21:14:10 2017 -0600
+
+    Added more changes
+
+commit e008ba4400f27e996209ef7648dd355277f140dc
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Thu Nov 9 20:57:40 2017 -0600
+
+    mebbe?
+
+commit e6cccea67245f90364ba06317b4a5f668788f0dd
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Thu Nov 9 20:49:38 2017 -0600
+
+    yes?
+
+commit ce0ad683e76be1779d3b08ce78efab51e2a8a628
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 19:30:43 2017 -0600
+
+    gonna deploy to add other 2 databases
+
+commit dd103150b85be2b23c65f64f0b033356828818db
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:53:06 2017 -0600
+
+    Imported extra classes
+
+commit a14c4b85e92f44e74be67ed6019166cabffec83b
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:48:29 2017 -0600
+
+    Added all tables to db
+
+commit f99a884a5f22c5bf059cc8c3a2ee954de4ccb192
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:13:16 2017 -0600
+
+    syntax error fixed, sorry Dr. Fraij
+
+commit 5b508d4f58d82f26347ee4d9b03431a8298429e2
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:11:13 2017 -0600
+
+    fix error in looping
+
+commit 30f50be4a9a456f1a6943f07b4362fb7ed3c0c93
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:07:35 2017 -0600
+
+    entered max val
+
+commit 9beb90f072e49167dd7e4aa9d1f7dd6fc199e9c8
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 16:05:05 2017 -0600
+
+    update create_db
+
+commit 2a640ac340c912e3a5ee60151e3b140d00a24147
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:52:50 2017 -0600
+
+    Fixed syntax error
+
+commit ad824bc0c0116470abdc5edd156b2109bb316716
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:50:24 2017 -0600
+
+    Fixed exception cases
+
+commit 32b4292acef835c4ef0ea5a350111c3fd9f8608a
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:40:41 2017 -0600
+
+    fixing create db
+
+commit 4fe7a71afa3432872098e60234926f6cc89b29b3
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:35:31 2017 -0600
+
+    issue with create db
+
+commit 0cd2a6ce76eb57d650ff4a1bdacf91b711290090
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:31:22 2017 -0600
+
+    fixed allowed character limit
+
+commit 07107f60a31259ff735461cc9ac45222c9667317
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:22:28 2017 -0600
+
+    update create db
+
+commit 538975cd7bee45c4d33de2bbe01b2c28be89eba6
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 15:01:43 2017 -0600
+
+    change to json
+
+commit 66fc531199394f32e62b6c636ef550d7691a886d
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 14:11:54 2017 -0600
+
+    run travis pls
+
+commit ec94208feb1c5447b88fcaef27b7869e731bf9c4
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 14:07:42 2017 -0600
+
+    testing test
+
+commit ce5a71d0256d82a50c9809bb502cc972dc3666bb
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 14:05:32 2017 -0600
+
+    testing test again
+
+commit 5227fdf5a771ebfbdd4edd0efb85de0bb463a0a3
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 13:59:54 2017 -0600
+
+    checking test.py again
+
+commit 78daae5ac932b9cb520facffbce60ed9032c9537
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 13:53:17 2017 -0600
+
+    testing test.py
+
+commit a67ce890806e6012f55ead73b3d7dba7921735d8
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 13:05:48 2017 -0600
+
+    Screw indentation error
+
+commit d2b22f5d23c1eda588bd9812880d88e5be0f6826
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 13:03:59 2017 -0600
+
+    Fix2 unit test
+
+commit 3b5262405d8490de736cac371f6028318b15909a
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:57:39 2017 -0600
+
+    fixed indentation error
+
+commit 729489c4ac0f02ba366e57a772eaf02d04bb66ef
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:55:55 2017 -0600
+
+    Add another unit test
+
+commit c46c986f19882f8db6c6adcec8ac575df17d9760
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:50:53 2017 -0600
+
+    mistake in unit test corrected3
+
+commit b26a507a21d246b7c2a5a5974d7e2091af523770
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:49:03 2017 -0600
+
+    mistake in unit test corrected2
+
+commit f79c3ee34d17a80b0bdac7ce68732396dab9dbd4
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:46:05 2017 -0600
+
+    mistake in unit test corrected
+
+commit 48f406b7843d22d42751091800aa909f82fd07b2
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:44:08 2017 -0600
+
+    Update unit test
+
+commit a446feef86681560d414b83686c81ea551396d8e
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:19:27 2017 -0600
+
+    pls work
+
+commit 6cdea85ecf463b940880b68e055589bdd6f03aa1
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:17:18 2017 -0600
+
+    Change new book line to Titles
+
+commit 9bc05330945cb7ef7dce02af0a63bf9d6b25d276
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:14:49 2017 -0600
+
+    Change id to google id
+
+commit fcaf55707db7a668b31f0dbe0575d55f38a30db1
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:12:01 2017 -0600
+
+    try to pass travis
+
+commit 603d40055d2873ff5abb8018384dde2da4d34ee6
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 12:05:52 2017 -0600
+
+    fix more replications
+
+commit cdbd7a0d2ded29dd5eacd93b3e3f43b2675780c4
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 11:45:59 2017 -0600
+
+    Replicate code
+
+commit 9abb9226585c8cab5e86b15dff2e69d1fdb65a58
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 11:37:38 2017 -0600
+
+    Push to test create db
+
+commit 755715bd7389b421c017465edb137cbf290c848a
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Nov 9 11:25:40 2017 -0600
+
+    Added little step for unit test
+
+commit c224362df00cfe0612c82e7606967e3c0f045030
+Merge: e2c46ea 342079e
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Wed Nov 8 20:49:00 2017 -0600
+
+    Merge remote-tracking branch 'origin/dev' into dev
+
+commit e2c46ea26c41950f9c0a53899f9cf1c0ba0d3004
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Wed Nov 8 20:47:47 2017 -0600
+
+    changes
+
+commit 342079e3b651e5c129a98808ba2e3b5168b12214
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Nov 8 19:57:38 2017 -0600
+
+    Trying to resolve import error
+
+commit 944ea578cee8354c351076e72a72a2d3f376d0d4
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Nov 8 19:47:35 2017 -0600
+
+    Fixing import errors
+
+commit e887062d0eaf71bcf3a34fd305b4b5427acee393
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Nov 8 19:44:01 2017 -0600
+
+    fixed spaces/tabs error and maybe import error
+
+commit 29c1e60c11ca99695dfbdb364808c1a2065bc4b9
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Nov 8 19:37:04 2017 -0600
+
+    Made test cases and model.py
+
+commit 316ef1fda11b461409bfc280566fd1d133439b66
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Tue Nov 7 19:27:10 2017 -0600
+
+    Fixed db and models to work on GCP
+
+commit ee7ddab5ca8466ba768e44f1265b30c975deeb95
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Tue Nov 7 19:13:14 2017 -0600
+
+    da fuq?!
+
+commit 8db0e5ac7fe99ed638777f0f4e62ebadb9dd4cab
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Tue Nov 7 17:42:56 2017 -0600
+
+    mo stuff
+
+commit 8e78bbffc6ccfb8621f6c3838fe50c31fa5610e4
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Tue Nov 7 17:30:48 2017 -0600
+
+    oops forgot to paste code lol
+
+commit c0085c8cab3c1da113f72951e73ef9bc364ded9c
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Tue Nov 7 17:21:07 2017 -0600
+
+    push base models.py from professors github
+
+commit 3949d82188a59995b2e0a85778b4bccc6cfdd540
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Mon Nov 6 17:00:32 2017 -0600
+
+    added test.py
+
+commit 88fb59532c3cb2ccece8b68c9c0544e55022e272
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Mon Nov 6 16:57:58 2017 -0600
+
+    updated requirements.txt
+
+commit 19dcac3244aeec2ce6d6371ff2a010e0a28f15bf
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Mon Nov 6 16:52:14 2017 -0600
+
+    Added .travis file
+
+commit a1f779a8aecb622d572ee75e1b65636f782c0519
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:16:40 2017 -0500
+
+    Updated log
+
+commit 3c64c13b06495e059b0d3a66fad5bb67ccdf649b
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:13:14 2017 -0500
+
+    Deleted last useless hidden file
+
+commit 56eba5f90644d0a1b0763cacd56b92f045b94d50
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:08:52 2017 -0500
+
+    Fix random added files
+
+commit 4014d0cf1a020a73ad23ce12b4dab68d05f56961
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Thu Oct 26 16:07:08 2017 -0500
+
+    Added log file
+
+commit 72933ba94a2aea655585fa04bbb0d02e755effe7
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 15:35:05 2017 -0500
+
+    Implemented sorted code and final touchups
+
+commit 0b6ad6aa647584d25e6d61a0d151964b7bc26048
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 13:46:55 2017 -0500
+
+    Added caterpillar info and chagned about page
+
+commit 7357b1dc02a226a49c725f952bfae53928ab0c46
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 12:45:50 2017 -0500
+
+    Inputted most of the data
+
+commit d973ddef3edccd716759c5a569bae0a57954cd90
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Thu Oct 26 01:23:57 2017 -0500
+
+    Fixed the transitioning between html pages
+
+commit 4869b8a0bf8100882314cd60480f76a467b67c6f
+Author: Mitchell Yick <mitchyi@cs.utexas.edu>
+Date:   Wed Oct 25 22:48:11 2017 -0500
+
+    Added Mitchell bio and pic
+
+commit fdea589e586022a2c69e7a649ab449fae623c43a
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 22:31:58 2017 -0500
+
+    Fixed 502 Gateway Error and connected NameCheap
+
+commit a6443c7f5d7809fc816dd8f5b94895e8d6f3f29a
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Wed Oct 25 20:18:23 2017 -0500
+
+    Made it flask approved. No more venv file
+
+commit 3dbbf654ff27a8c9de49673deba9df2304e02a82
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Wed Oct 25 19:14:13 2017 -0500
+
+    derp
+
+commit a7ba4b5813f403285e9d86e2b2a43418da5d718b
+Author: Unknown <nicole.muzquiz@gmail.com>
+Date:   Wed Oct 25 17:47:00 2017 -0500
+
+    small <br> segment making it look weird. Fixed
+
+commit 87b173d97a9b1c882900cc8b21a320e3a10b0949
+Author: Unknown <nicole.muzquiz@gmail.com>
+Date:   Wed Oct 25 17:45:10 2017 -0500
+
+    Finished my about and added Hungry Caterpillar pic
+
+commit f5660773773dc8f1548a2e81d47f6966fa9b8a33
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 12:36:25 2017 -0500
+
+    Adding harry potter image to the splash page
+
+commit 12e3a7864ff5dcd35d71a3816dc8a5a43343da8f
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 11:04:11 2017 -0500
+
+    Added harry potter details throughout all the models
+
+commit ab3cc212da21653bbcfc6de511408e2a61fcd80c
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 25 10:34:01 2017 -0500
+
+    Made bio page for Salman Charolia
+
+commit 7399aebae2b577261c0066af340826982769cbaa
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Tue Oct 24 21:38:14 2017 -0500
+
+    made pages standard, added aleem bio
+
+commit ea45cdf28892fc18075b8c41e013cc339fbf2a1b
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Tue Oct 24 18:06:38 2017 -0500
+
+    added navigation bar on main page
+
+commit e6ebe943c2df6eb7a45d72fc90519ed13ce07af7
+Author: Salman Charolia <charolia@cs.utexas.edu>
+Date:   Tue Oct 24 11:19:06 2017 -0500
+
+    Fixed index.html links to ppublishers and authors
+
+commit fe2a9ab527ec44a3e691f1894dfe01d36fe0f962
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Mon Oct 23 22:54:27 2017 -0500
+
+    Second upload
+
+commit 54414c9fb264c1d28778218ec116126218d28585
+Author: Aleem Ali <aleemdarediya@gmail.com>
+Date:   Mon Oct 23 22:33:37 2017 -0500
+
+    Organized and created files
+
+commit a5acde93d275e711d54e0518575b130fe0a9ebe8
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sun Oct 22 00:06:10 2017 -0500
+
+    Got browser tab icon working
+
+commit fe5801e0f8fee31a760a3eecb6e56004655a9ef1
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 23:57:17 2017 -0500
+
+    minor padding changes
+
+commit f489164f8d90ec96f94d64df6e0b7dcd9881a896
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 23:40:51 2017 -0500
+
+    Decorated my tab in about
+    
+    feel free to copy layout to decorate your own or I can help ya if you want :)
+
+commit 0d611e3174b1e39a9fe21f5de52848c25244ee62
+Author: insanity-chu <nicole.muzquiz@gmail.com>
+Date:   Sat Oct 21 22:31:46 2017 -0500
+
+    Made Styled Tabs for About page
+    
+    Used Bootstrap and a css file to override the default css of bootstrap
+
+commit bd5e2663dee6cf12051b4f1dae610facf19cfe07
+Author: NicoleMuzquiz <nicole.muzquiz@gmail.com>
+Date:   Thu Oct 19 20:28:35 2017 -0500
+
+    added templetes and html files
+
+commit 70f11a116301545e1de9e548c0d491c855277340
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 18 18:36:11 2017 -0500
+
+    finished virtual environment setup
+
+commit d630cc176f67014af6875540f30c46f50907c943
+Author: Salman Charolia <salmancharolia@gmail.com>
+Date:   Wed Oct 18 18:12:55 2017 -0500
+
+    Starting Virtual Environment
+
+commit 48f72317219a441eb6e14f7fad762444bd459ab3
+Author: mitchellyick <31523888+mitchellyick@users.noreply.github.com>
+Date:   Wed Oct 18 17:33:14 2017 -0500
+
+    Initial commit

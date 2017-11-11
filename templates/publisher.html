@@ -95,6 +95,8 @@
 
 
 
+
+
         <!--<tr>
 		<tr>
             <td><a href="{{url_for('title')}}">Harry Potter and the Sorcerer's Stone</a></td>
@@ -186,6 +188,14 @@ function sortTable(n) {
   }
 }
 </script>
+<script>
+      $(document).ready(function() {
+        $('#table').DataTable({
+          "order": [[ 0, "asc" ]],
+          "iDisplayLength": 50
+        });
+      });
+    </script>
 
 </body>
 
