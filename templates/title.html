@@ -18,6 +18,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+  <!--pagination plug in -->
+  <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.16/pagination/full_numbers_no_ellipses.js"></script>
 </head>
 
 <body>
@@ -84,7 +86,8 @@
 <script type="text/javascript">
  $(document).ready(function() {
     $('#table').DataTable({
-      "pagingType": "full_numbers"
+      "pagingType": "full_numbers_no_ellipses"
+      "iDisplayLength": 50
     });
  }
  </script>
