@@ -22,8 +22,9 @@ def author():
 	return render_template('author.html',auths = auths, books = books, pubs = pubs)
 @app.route('/title')
 def title():
-	books = session.query(Titles).all()
-	return render_template('title.html', books = books)
+	#books = session.query(Titles).all()
+	#return render_template('title.html', books = books)
+	return render_template('test.html')
 @app.route('/publisher')
 def publisher():
 	auths = session.query(Authors).all()
