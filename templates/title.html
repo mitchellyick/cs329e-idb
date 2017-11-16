@@ -84,22 +84,27 @@
 </table>
 </div>
 
-<!--<script type="text/javascript">
+<script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="dataTables.filter.html.js"></script>
+<<script type="text/javascript">
  $(document).ready(function() {
     $('#table').DataTable({
       "pagingType": "full_numbers_no_ellipses"
-      "iDisplayLength": 50
+      "iDisplayLength": 15
+      "columnDefs": [
+          {type: "Title", targets: 0}
+      ]
     });
  }
- </script> -->
+ </script> 
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
  $(function(){
     $(selector).pagination({
       itemsOnPage: 10
     });
  });
- </script>
+ </script> -->
 
     <!--<tr>
 			<td>wrOQLV6xB-wC</td>
