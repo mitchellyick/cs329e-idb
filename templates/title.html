@@ -15,11 +15,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" href="https://code.jquery.com/jquery-1.12.4.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
   <!--pagination plug in -->
   <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.16/pagination/full_numbers_no_ellipses.js"></script>
+    <script type="text/javascript" href="Scrpts.simplePagination.js"></script>
 </head>
 
 <body>
@@ -83,13 +84,21 @@
 </table>
 </div>
 
-<script type="text/javascript">
+<!--<script type="text/javascript">
  $(document).ready(function() {
     $('#table').DataTable({
       "pagingType": "full_numbers_no_ellipses"
       "iDisplayLength": 50
     });
  }
+ </script> -->
+
+<script type="text/javascript">
+ $(function(){
+    $(selector).pagination({
+      itemsOnPage: 10
+    });
+ });
  </script>
 
     <!--<tr>
