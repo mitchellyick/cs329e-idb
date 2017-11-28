@@ -33,7 +33,33 @@ def publisher():
 	authors = session.query(Authors).all()
 	books = session.query(Titles).all()
 	pubs = session.query(Publishers).all()
-	return render_template('publisher.html', authors = authors, books = books, pubs = pubs)		
+	return render_template('publisher.html', authors = authors, books = books, pubs = pubs)
+
+@app.route('/publisher/<publisher_name>')
+def publisher_page(publisher_name):
+	info = session.query(Publishers).all()
+	authors = session.query(Authors).all()
+	books = session.query(Titles).all()
+	for i in info:
+		if i.name ==publisher_name:
+			owner = i.owner
+			publisher_description = i.description
+			website = i.web_link
+			publisher_image_url = i.image_url
+
+	lia = []
+	for i in authors:
+		if i.publisher == publisher_name:
+			if i.name not in lia:
+				lia.append(i.name)
+	lib = []
+	for i in books:
+		if i.publisher == publisher_name:
+			if i.title not in lib:
+				lib.append(i.title)
+	
+	return render_template('i_publisher.html', info=info, publisher_name=publisher_name, owner=owner, publisher_description = publisher_description, \
+	website=website, publisher_image_url=publisher_image_url, lia=lia, lib=lib)
 
 @app.route('/unit_tests')
 def unit_tests():

@@ -67,7 +67,7 @@
         </script>
         {% for i in pubs %}
           <tr>
-            <td>{{i.name}}</td>
+            <td><a href = "/publisher/{{i.name}}">&nbsp{{i.name}}&nbsp</a></td>
             <td>{{i.owner}}</td>
             <td>{{i.description}}</td>
             <td><a href = "{{i.web_link}}">{{i.web_link}}</a></td>
