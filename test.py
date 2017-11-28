@@ -50,10 +50,10 @@ class DBTestCases(unittest.TestCase):
         #s = create_books()
         r = session.query(Authors).filter_by(name = 'Terry Goodkind').first()
         self.assertEqual(str(r.name), 'Terry Goodkind')
-    def test_db_there_6(self):
+    #def test_db_there_6(self):
         #s = create_books()
-        r = session.query(Authors).filter_by(name = 'Random House').first()
-        self.assertEqual(str(r.name), 'Random House') 
+     #   r = session.query(Authors).filter_by(name = 'Random House').first()
+      #  self.assertEqual(str(r.name), 'Random House') 
     def test_db_there_7(self):
         #s = create_books()
         r = session.query(Authors).filter_by(education = 'Dana Hall School, 1928').first()
