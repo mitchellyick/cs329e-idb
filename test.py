@@ -45,6 +45,22 @@ class DBTestCases(unittest.TestCase):
     def test_db_there_4(self):
         #s = create_books()
         r = session.query(Titles).filter_by(title = 'Royal Assassin').first()
-        self.assertEqual(str(r.title), 'Royal Assassin')    
+        self.assertEqual(str(r.title), 'Royal Assassin')
+    def test_db_there_5(self):
+        #s = create_books()
+        r = session.query(Authors).filter_by(name = 'Terry Goodkind').first()
+        self.assertEqual(str(r.name), 'Terry Goodkind')
+    def test_db_there_6(self):
+        #s = create_books()
+        r = session.query(Authors).filter_by(born = '1963-07-19').first()
+        self.assertEqual(str(r.born), '1963-07-19') 
+    def test_db_there_7(self):
+        #s = create_books()
+        r = session.query(Authors).filter_by(education = 'Dana Hall School, 1928').first()
+        self.assertEqual(str(r.education), 'Dana Hall School, 1928') 
+    def test_db_there_8(self):
+        #s = create_books()
+        r = session.query(Authors).filter_by(alma_mater = 'Princeton University').first()
+        self.assertEqual(str(r.alma_mater), 'Princeton University')                    
 if __name__ == '__main__':
 	unittest.main()
