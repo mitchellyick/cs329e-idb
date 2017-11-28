@@ -50,10 +50,10 @@ class DBTestCases(unittest.TestCase):
         #s = create_books()
         r = session.query(Authors).filter_by(name = 'Terry Goodkind').first()
         self.assertEqual(str(r.name), 'Terry Goodkind')
-    #def test_db_there_6(self):
+    def test_db_there_6(self):
         #s = create_books()
-     #   r = session.query(Authors).filter_by(name = 'Random House').first()
-      #  self.assertEqual(str(r.name), 'Random House') 
+        r = session.query(Authors).filter_by(name = 'Stephen King').first()
+        self.assertEqual(str(r.name), 'Stephen King') 
     def test_db_there_7(self):
         #s = create_books()
         r = session.query(Authors).filter_by(education = 'Dana Hall School, 1928').first()
@@ -70,10 +70,10 @@ class DBTestCases(unittest.TestCase):
         #s = create_books()
         r = session.query(Publishers).filter_by(owner = 'Scholastic Corporation').first()
         self.assertEqual(str(r.owner), 'Scholastic Corporation')   
-    #def test_db_there_11(self):
+    def test_db_there_11(self):
         #s = create_books()
-     #   r = session.query(Publishers).filter_by(website = 'http://harpercollins.com').first()
-      #  self.assertEqual(str(r.website), 'http://harpercollins.com')
+        r = session.query(Publishers).filter_by(owner = 'Penguin Random House').first()
+        self.assertEqual(str(r.website), 'Penguin Random House')
     def test_db_there_12(self):
         #s = create_books()
         r = session.query(Publishers).filter_by(name = 'Palgrave Macmillan').first()
