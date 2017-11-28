@@ -13,9 +13,7 @@
       <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <!-- -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
-      
+      <!-- -->      
 
       <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
       <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
@@ -68,12 +66,12 @@
         </script>
         {% for i in authors %}
           <tr>
-            <td><a href = "/author/{{i.name}}">&nbsp{{i.name}}&nbsp</a></td>
+            <td><a href = "/author/{{i.name}}">{{i.name}}</a></td>
             <td>{{i.born}}</td>
             <td>{{i.nationality}}</td>
             <td>{{i.alma_mater}}</td>
             <td>{{i.education}}</td>
-            <td><a href = "{{i.wikipedia_url}}">&nbsp{{i.wikipedia_url}}</a>&nbsp</td>
+            <td><a href = "{{i.wikipedia_url}}">{{i.wikipedia_url}}</a></td>
           </tr>
         {% endfor %}
       </tbody>

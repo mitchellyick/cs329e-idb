@@ -92,6 +92,7 @@ def author_page(author_name):
 			nationality = i.nationality
 			alma_mater = i.alma_mater
 			wiki_url = i.wikipedia_url
+			image_url = i.image_url
 			
 	lip = []
 	for i in info:
@@ -104,7 +105,7 @@ def author_page(author_name):
 			if i.title not in lib:
 				lib.append(i.title)
 	return render_template('i_authors.html', info=info, author_name=author_name, dob=dob, author_description = author_description, \
-	education=education, nationality=nationality, alma_mater=alma_mater, wiki_url=wiki_url, publisher = lip, title = lib)
+	education=education, nationality=nationality, alma_mater=alma_mater, image_url = image_url, wiki_url=wiki_url, publisher = lip, title = lib)
 
 @app.route('/unit_tests')
 def unit_tests():
