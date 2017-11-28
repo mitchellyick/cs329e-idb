@@ -67,7 +67,7 @@
         </script>
         {% for i in books %}
           <tr>
-            <td>{{i.title}}</td>
+            <td><a href = "/title/{{i.title}}">&nbsp{{i.title}}&nbsp</a></td>
             <td>{{i.google_id}}</td>
             <td>{{i.isbn}}</td>
             <td>{{i.publication_date}}</td>

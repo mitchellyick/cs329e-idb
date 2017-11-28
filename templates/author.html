@@ -68,7 +68,7 @@
         </script>
         {% for i in authors %}
           <tr>
-            <td>{{i.name}}</td>
+            <td><a href = "/author/{{i.name}}">&nbsp{{i.name}}&nbsp</a></td>
             <td>{{i.born}}</td>
             <td>{{i.nationality}}</td>
             <td>{{i.alma_mater}}</td>

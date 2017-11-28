@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{publisher_name}}</title>
+    <title>{{author_name}}</title>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -39,7 +39,7 @@
 </nav>
 
     <div class="jumbotron text-center" style="font-family: 'Montserrat', sans-serif;">
-    <h1>{{publisher_name}}</h1>
+    <h1>{{author_name}}</h1>
     <div class = "cover"><img src = "{{publisher_image_url}}"></div>
   </div>
 
@@ -47,27 +47,30 @@
     <div class = "row">
       <div class = "col-md-6 text-left">
         <h2>Information: </h2>
-        <p><b>Name: </b>{{publisher_name}}</p>
-        <p><b>Owner: </b>{{owner}}</p>
-        <p><b>About: </b>{{publisher_description}}</p>
-        <p><a href = "{{website}}"><b>Publisher Website</b></a></p>
-        <p><a href = "{{publisher_image_url}}"><b>Image URL</b></a></p>
+        <p><b>Name: </b>{{author_name}}</p>
+        <p><b>Date of Birth: </b>{{dob}}</p>
+        <p><b>About: </b>{{author_description}}</p>
+        <p><b>Education: </b>{{education}}</p>
+        <p><b>Nationality: </b>{{nationality}}</p>
+        <p><b>Alma Mater: </b>{{alma_mater}}</p>
+        <p><a href = "{{wiki_url}}"><b>Wiki</b></a></p>
+
       </div>
 
       <br>
 
       <div class = "col-md-6 text-left">
-        <p><b>Books published by {{publisher_name}}</b></p>
-        {% for i in lib %}
+        <p><b>Masterpiece Created By {{author_name}}</b></p>
+        {% for i in title %}
         <p><a href =  "/title/{{i}}">{{i}}</a></p>
         {% endfor %}
 
         <br>
         <br>
 
-        <p><b>Authors associated with {{publisher_name}}</b></p>
-        {% for i in lia %}
-        <p><a href =  "/authors/{{i}}">{{i}}</a></p>
+        <p><b>Publishers associated with {{publisher_name}}</b></p>
+        {% for i in publisher %}
+        <p><a href =  "/publisher/{{i}}">{{i}}</a></p>
         {% endfor %}
         <br>
   </body>
