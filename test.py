@@ -70,10 +70,10 @@ class DBTestCases(unittest.TestCase):
         #s = create_books()
         r = session.query(Publishers).filter_by(owner = 'Scholastic Corporation').first()
         self.assertEqual(str(r.owner), 'Scholastic Corporation')   
-    def test_db_there_11(self):
+    #def test_db_there_11(self):
         #s = create_books()
-        r = session.query(Publishers).filter_by(website = 'http://harpercollins.com').first()
-        self.assertEqual(str(r.website), 'http://harpercollins.com')
+     #   r = session.query(Publishers).filter_by(website = 'http://harpercollins.com').first()
+      #  self.assertEqual(str(r.website), 'http://harpercollins.com')
     def test_db_there_12(self):
         #s = create_books()
         r = session.query(Publishers).filter_by(name = 'Palgrave Macmillan').first()
