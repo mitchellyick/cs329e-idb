@@ -52,8 +52,8 @@ class DBTestCases(unittest.TestCase):
         self.assertEqual(str(r.name), 'Terry Goodkind')
     def test_db_there_6(self):
         #s = create_books()
-        r = session.query(Authors).filter_by(born = '1963-07-19').first()
-        self.assertEqual(str(r.born), '1963-07-19') 
+        r = session.query(Authors).filter_by(name = 'Random House').first()
+        self.assertEqual(str(r.name), 'Random House') 
     def test_db_there_7(self):
         #s = create_books()
         r = session.query(Authors).filter_by(education = 'Dana Hall School, 1928').first()
@@ -61,6 +61,22 @@ class DBTestCases(unittest.TestCase):
     def test_db_there_8(self):
         #s = create_books()
         r = session.query(Authors).filter_by(alma_mater = 'Princeton University').first()
-        self.assertEqual(str(r.alma_mater), 'Princeton University')                    
+        self.assertEqual(str(r.alma_mater), 'Princeton University')   
+    def test_db_there_9(self):
+        #s = create_books()
+        r = session.query(Publishers).filter_by(name = 'Del Rey Books').first()
+        self.assertEqual(str(r.name), 'Del Rey Books') 
+    def test_db_there_10(self):
+        #s = create_books()
+        r = session.query(Publishers).filter_by(owner = 'Scholastic Corporation').first()
+        self.assertEqual(str(r.owner), 'Scholastic Corporation')   
+    def test_db_there_11(self):
+        #s = create_books()
+        r = session.query(Publishers).filter_by(website = 'http://harpercollins.com').first()
+        self.assertEqual(str(r.website), 'http://harpercollins.com')
+    def test_db_there_12(self):
+        #s = create_books()
+        r = session.query(Publishers).filter_by(name = 'Palgrave Macmillan').first()
+        self.assertEqual(str(r.name), 'Palgrave Macmillan')                          
 if __name__ == '__main__':
 	unittest.main()
