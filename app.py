@@ -17,18 +17,23 @@ def about():
 @app.route('/author')
 def author():
 	authors = session.query(Authors).all()
-	return render_template('author.html',authors = authors)
+	books = session.query(Titles).all()
+	pubs = session.query(Publishers).all()
+	return render_template('author.html',authors = authors, books = books, pubs = pubs)
 @app.route('/title')
 def title():
-	books = session.query(Titles).all()
-	return render_template('title.html',books = books)		
-
 	#books = session.query(Titles).all()
 	#return render_template('title.html', books = books)
+	authors = session.query(Authors).all()
+	books = session.query(Titles).all()
+	pubs = session.query(Publishers).all()
+	return render_template('title.html', authors = authors, books = books, pubs = pubs)	
 @app.route('/publisher')
 def publisher():
+	authors = session.query(Authors).all()
+	books = session.query(Titles).all()
 	pubs = session.query(Publishers).all()
-	return render_template('publisher.html',pubs = pubs)		
+	return render_template('publisher.html', authors = authors, books = books, pubs = pubs)		
 
 @app.route('/unit_tests')
 def unit_tests():

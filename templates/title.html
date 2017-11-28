@@ -1,15 +1,99 @@
 <html>
+  <head>
+  <!--<link rel="stylesheet" type="text/css" href="static/css/index.css">-->
+  <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" -->
+      <!-- rel="stylesheet"> -->
+
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Books</title>
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!-- -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+      
+
+      <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+      <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Books Galore</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="{{url_for('index')}}">Home</a></li>
+      <li ><a href="{{url_for('about')}}">About</a></li>
+      <li ><a href="{{url_for('author')}}">Authors</a></li>
+      <li class="active"><a href="{{url_for('title')}}">Titles</a></li>
+      <li><a href="{{url_for('publisher')}}">Publishers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <div id="title" class="text-center title">
+      <br>
+      <h1>Book Titles</h1>
+      <h4> Click on the table heading to sort (1 click: A-Z, 2 clicks: Z-A)</h4>
+    </div>
+
+    <div class="text_center">
+    <br>
+    {% if books == [] %}
+      <p>No authors exist</p>
+    {% else %}
+      <table id="myTable" cellpadding="500px" class="sortable table-bordered text-center" style="margin: auto; style">
+      <thead>
+        <tr>
+            <th>Title</th>
+            <th>Google ID</th>
+            <th>ISBN</th>
+            <th>Publication Date</th>
+            <th>Description</th>
+              </tr>
+      </thead>
+      <tbody>
+        <script>
+          $(document).ready( function () {
+              $('#myTable').DataTable();
+          } );
+        </script>
+        {% for i in books %}
+          <tr>
+            <td>{{i.title}}</td>
+            <td>{{i.google_id}}</td>
+            <td>{{i.isbn}}</td>
+            <td>{{i.publication_date}}</td>
+            <td>{{i.description}}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      </table>
+    {% endif %}
+    </div>
+    <br>
+    <br>
+  </body>
+</html>
+<!--<html>
 
 <head>
 <title> Books Galore </title>
 	<meta name="viewpt" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="static/images/book.ico">
     <meta charset="utf-8">
-    <!-- Latest compiled and minified CSS -->
+    Latest compiled and minified CSS
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- jQuery library -->
+    jQuery library 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
+    Latest compiled JavaScript 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
@@ -18,20 +102,20 @@
    <script type="text/javascript" href="Scrpits/jquery-1.12.4.js"></script>
   <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
   <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
-  <!--pagination plug in -->
+  pagination plug in 
   <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.16/pagination/full_numbers_no_ellipses.js"></script>
     <script type="text/javascript" href="Scrpts/simplePagination.js"></script>
 </head>
 
 <body>
 
-<!--
+
 	<a href = 'about.html'>About</a>
 	<a href = 'model.html'>Models</a>
 	<a href = 'author.html'>Authors</a>
 	<a href = 'title.html'>Titles</a>
 	<a href = 'publisher.html'>Publishers</a>
--->
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -102,8 +186,7 @@ $(document).ready(function() {
     } );
 } );
  </script> 
-
-<!--<script type="text/javascript">
+<script type="text/javascript">
  $(function(){
     $(selector).pagination({
       itemsOnPage: 10
@@ -140,7 +223,7 @@ $(document).ready(function() {
 			<td>This much-loved classic picture book follows the caterpillar's week while he eats through a range of foods in preparation for his hibernation and subsequent appearance as a beautiful butterfly. With its die-cut pages and holes to explore, this is a richly satisfying book for children. The cuddly caterpillar toy can be pushed through the giant holes as children follow this simple, hopeful story.</td>
 			<td><a href="{{url_for('publisher')}}">Penguin Group</a></td>
 			<td><a href="{{url_for('author')}}">Eric Carle</a></td>
-		</tr> -->
+		</tr> 
 
 		<script>
 function sortTable(n) {
@@ -205,3 +288,4 @@ function sortTable(n) {
 </body>
 
 </html>
+-->
