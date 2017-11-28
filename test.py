@@ -24,8 +24,6 @@ class DBTestCases(unittest.TestCase):
         s = Titles(google_id='20', title = 'C++')
         session.add(s)
         session.commit()
-
-
         r = session.query(Titles).filter_by(google_id = '20').one()
         self.assertEqual(str(r.google_id), '20')
 
@@ -36,11 +34,17 @@ class DBTestCases(unittest.TestCase):
         #s = create_books()
         r = session.query(Titles).filter_by(google_id = 'wrOQLV6xB-wC').one()
         self.assertEqual(str(r.google_id), 'wrOQLV6xB-wC')
-
     def test_db_there_2(self):
         #s = create_books()
         r = session.query(Titles).filter_by(google_id = 'kPpeTrfXpKsC').first()
         self.assertEqual(str(r.google_id), 'kPpeTrfXpKsC')
-
+    def test_db_there_3(self):
+        #s = create_books()
+        r = session.query(Titles).filter_by(isbn = '1101486406').first()
+        self.assertEqual(str(r.isbn), '1101486406')
+    def test_db_there_4(self):
+        #s = create_books()
+        r = session.query(Titles).filter_by(title = 'Royal Assassin').first()
+        self.assertEqual(str(r.title), 'Royal Assassin')    
 if __name__ == '__main__':
 	unittest.main()
