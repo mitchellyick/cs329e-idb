@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{book_title}}</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+
+  <style>
+  </style>
+  </head>
+
+  <body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Books Galore</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="{{url_for('index')}}">Home</a></li>
+      <li ><a href="{{url_for('about')}}">About</a></li>
+      <li ><a href="{{url_for('author')}}">Authors</a></li>
+      <li class="active"><a href="{{url_for('title')}}">Titles</a></li>
+      <li ><a href="{{url_for('publisher')}}">Publishers</a></li>
+    </ul>
+  </div>
+</nav>
+
+    <div class="jumbotron text-center" style="font-family: 'Montserrat', sans-serif;">
+    <h1>{{book_title}}</h1>
+    <div class = "cover"><img src = "{{title_image_url}}"></div>
+  </div>
+
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-6 text-left">
+        <h2>Information: </h2>
+        <p><b>Title: </b>{{book_title}}</p>
+        {% for i in lia %}
+          <p><b>Author: </b><a href = "/author/{{i}}">{{i}}</a></p>
+        {% endfor %}
+        <p><b>Description: </b>{{book_descrip}}</p>
+        <p><b>ISBN: </b>{{isbn}}</p>
+        <p><b>Publication Date: </b>{{pub_date}}</p>
+
+        <p><b>Publisher: </b><a href = "/publisher/{{pub}}">{{pub}}</a></p>
+
+      </div>
+
+      <br>
+  </body>
+  </html>
